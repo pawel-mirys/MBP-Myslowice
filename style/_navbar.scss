@@ -1,0 +1,111 @@
+.main-head {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    hr {
+        position: absolute;
+        top: 85%;
+        right: 5%;
+        width: calc(85% - 2vw);
+        margin-left: 10rem;
+        border-color: rgba(000, 000, 000, 0.2);
+    }
+}
+
+.up-nav {
+    background-color: $mid-blue;
+    min-height: 5vh;
+    font-size: $up-nav;
+    @include flex(center, center, row);
+}
+
+.up-btns {
+    padding: 2rem 0 2rem 0;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ul {
+        @include flex(space-between, center, row);
+    }
+}
+
+.left {
+    width: 20rem;
+    flex-wrap: wrap;
+    .bold {
+        font-weight: 700;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.right {
+    width: 25rem;
+    flex-wrap: wrap;
+    li {
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.down-nav {
+    padding: 2rem 0 2rem 0;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    @include flex(space-between, center, row);
+}
+
+#logo {
+    flex: 2 1 40rem;
+    cursor: default;
+    img {
+        cursor: pointer;
+    }
+}
+
+.down-btns {
+    flex-wrap: wrap;
+    width: 8rem;
+    flex: 4 1 50rem;
+    @include flex(space-around, center, row);
+    li {
+        font-size: $down-nav;
+        .down-nav-a {
+            color: $mid-blue;
+            padding-bottom: 2rem;
+            position: relative;
+            font-weight: 600;
+            &:hover {
+                .a-bottom-border {
+                    z-index: 3;
+                    position: absolute;
+                    bottom: 0;
+                    width: 20%;
+                    border: 1px solid $mid-blue;
+                }
+            }
+        }
+    }
+}
+
+.down-icons {
+    max-width: 10rem;
+    margin-left: 3rem;
+    @include flex(space-between, center, row);
+    flex: 1 1 10rem;
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.burger {
+    display: none;
+}

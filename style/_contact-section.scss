@@ -1,0 +1,83 @@
+#section-contact {
+    height: 90rem;
+    width: 100%;
+    @include flex(center, center, row);
+    position: relative;
+    margin-top: 3rem;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 15%;
+        height: 97.5%;
+        z-index: -2;
+        background-color: $light-blue;
+        opacity: 0.1;
+        top: -.7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.contact-info {
+    width: 50%;
+    height: 100%;
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: 10%;
+        h2 {
+            color: $dark-blue;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 2rem;
+            color: $dark-blue;
+            margin-bottom: 3rem;
+            width: 90%;
+        }
+        .label {
+            font-size: $main-text;
+            color: $dark-blue;
+        }
+        #libs {
+            display: block;
+            font-size: 2.2rem;
+            min-width: 90%;
+            margin-top: 1rem;
+            color: $dark-blue;
+            border: 1px solid $dark-blue;
+            border-radius: 1rem;
+            padding: 1rem;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background: url(../assets/icons/down-arrow.svg) no-repeat white;
+            background-position: 95% 50%;
+        }
+    }
+}
+
+.lib-info {
+    margin-top: 3rem;
+    line-height: 3rem;
+    h4 {
+        color: $dark-blue;
+    }
+}
+
+.contact-image {
+    display: flex;
+    @include flex(flex-end, flex-start, column);
+    width: 50%;
+    img {
+        width: 75rem;
+    }
+}
+
+.contact-button {
+    @include hover-btn(25rem);
+}

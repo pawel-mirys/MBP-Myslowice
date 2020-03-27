@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descripton" content="Strona główna Miejskiej Biblioteki Publicznej w Mysłowicach.">
+    <meta name="robots" content="index, follow">
+    <title>MBP | Mysłowice </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logos/Vector.svg">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/slick-theme.css">
+
+</head>
+
+<body>
+    <!-- main navbar -->
+    <header class="main-head">
+        <!-- up nav -->
+        <nav class="up-nav">
+            <div class="up-btns">
+                <ul class="left">
+                    <li class="bold"><a href="">Zaloguj się</a></li>
+                    <li><span>lub</span></li>
+                    <li class="bold"><a href="">Stwórz konto</a></li>
+                </ul>
+                <ul class="right">
+                    <li>
+                        <a href="#">O nas</a>
+                    </li>
+                    <li>
+                        <a href="#">Dyrekcja</a>
+                    </li>
+                    <li>
+                        <a href="#">Historia MBP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--down nav  -->
+        <nav class="down-nav">
+            <a href="#" id="logo"> <img src="assets/logos/logo.jpg" alt=""></a>
+            <ul class="down-btns">
+                <li>
+                    <a href="#" class="down-nav-a">
+                        <div class="a-bottom-border"></div> Strona główna</a>
+                </li>
+                <li>
+                    <a href="#books-container" class="down-nav-a">
+                        <div class="a-bottom-border"></div>Księgozbiór</a>
+                </li>
+                <li>
+                    <a href="#section-events" class="down-nav-a">
+                        <div class="a-bottom-border"></div>Kalendarium</a>
+                </li>
+                <li>
+                    <a href="#news-container" class="down-nav-a">
+                        <div class="a-bottom-border"></div>Aktualności</a>
+                </li>
+                <li>
+                    <a href="#section-contact" class="down-nav-a">
+                        <div class="a-bottom-border"></div>Kontakt</a>
+                </li>
+            </ul>
+            <ul class="down-icons">
+                <li><img src="assets/icons/clock.svg" alt=""></li>
+                <li><img src="assets/icons/heart.svg" alt=""></li>
+                <li><img class="notify" src="assets/icons/notify box.svg" alt=""></li>
+            </ul>
+
+            <div class="burger" onclick="navPopOut()">
+                <img src="assets/icons/bruger 1.svg" alt="">
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- responsive navbar -->
+    <header class="responsive-head nav-click-out">
+        <nav class="rosponsive-nav">
+            <ul class="icons">
+                <li><img src="assets/icons/clock-grey.svg" alt=""></li>
+                <li><img src="assets/icons/heart-grey.svg" alt=""></li>
+                <li><img class="notify" src="assets/icons/box-grey.svg" alt=""></li>
+            </ul>
+            <ul class="user">
+                <li><a href="#">Zaloguj się</a></li>
+                <li><a href="#">Stwórz konto</a></li>
+            </ul>
+            <ul class="info">
+                <li>
+                    <a href="#" class="">Strona główna</a>
+                </li>
+                <li>
+                    <a href="#books-container" class="">Księgozbiór</a>
+                </li>
+                <li>
+                    <a href="#section-events" class="">Kalendarium</a>
+                </li>
+                <li>
+                    <a href="#news-container" class="">Aktualności</a>
+                </li>
+                <li>
+                    <a href="#section-contact" class="">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+
+
+        <!-- intro section  -->
+        <section id="intro" class="intro">
+            <div class="intro-bg"></div>
+            <div class="form-wrapper">
+                <h1>Jakiej książki szukasz?</h1>
+                <form action="">
+                    <input type="text" placeholder="Wpisz słowo kluczowe, tytuł lub autora książki.">
+                    <button type="submit" class="submit-btn">Szukaj <img src="assets/icons/search.svg" alt=""></button>
+                </form>
+                <button class="advanced-btn special-button">Wyszukiwanie zawansowane <img src="assets/icons/arrow-right-white.svg" alt=""></button>
+            </div>
+        </section>
+
+
+        <!-- section events -->
+        <section id="section-events">
+            <div class="events-soon">
+                <img class="dots" src="assets/images/dots.jpg" alt="">
+                <h2>Najbliższe wydarzenia</h2>
+                <div class="responsive-cards">
+                    <div class="responsive-card">
+                        <h3>Zimowe opowieści w bibliotece</h3>
+                        <p>Zajęcia literacko- plastyczne dla grup przedszkolnych</p>
+                        <ul>
+                            <li><img src="assets/icons/GPS.svg" alt="">Biblioteka Centralna</li>
+                            <li><img src="assets/icons/calendar.svg" alt="">16 Sty. 2019</li>
+                            <li>
+                                <a href="#"><img id="arrow-button" src="assets/icons/right arrow.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="responsive-card">
+                        <h3>O malarstwie i malowaniu</h3>
+                        <p>Zajęcia biblioterapeutyczne dla uczestników Warsztatów Terapii Zajęciowej ze Stowarzyszenia Pomocy Dzieciom Niepełnosprawnym „Radość” w Mysłowicach</p>
+                        <ul>
+                            <li><img src="assets/icons/GPS.svg" alt="">Filia biblioteczna nr 2 </li>
+                            <li><img src="assets/icons/calendar.svg" alt="">21 Sty. 2019</li>
+                            <li>
+                                <a id="arrow-button" href="#"><img id="arrow-button" src="assets/icons/right arrow.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="events-button special-button">Pełne kalendarium <img src="assets/icons/right arrow clear.svg" alt=""></button>
+            </div>
+
+            <div class="events-calendary">
+                <div class="grey-break"></div>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Zimowe opowieści w bibliotece</h3>
+                        <p>Zajęcia literacko- plastyczne dla grup przedszkolnych</p>
+                        <ul>
+                            <li><img src="assets/icons/GPS.svg" alt="">Biblioteka Centralna</li>
+                            <li><img src="assets/icons/calendar.svg" alt="">16 Sty. 2019</li>
+                            <li>
+                                <a href="#"><img id="arrow-button" src="assets/icons/right arrow.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>O malarstwie i malowaniu</h3>
+                        <p>Zajęcia biblioterapeutyczne dla uczestników Warsztatów Terapii Zajęciowej ze Stowarzyszenia Pomocy Dzieciom Niepełnosprawnym „Radość” w Mysłowicach</p>
+                        <ul>
+                            <li><img src="assets/icons/GPS.svg" alt="">Filia biblioteczna nr 2 </li>
+                            <li><img src="assets/icons/calendar.svg" alt="">21 Sty. 2019</li>
+                            <li>
+                                <a id="arrow-button" href="#"><img id="arrow-button" src="assets/icons/right arrow.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section description -->
+        <section id="section-description">
+            <div class="description-container">
+                <div class="description-image">
+                    <img id="building" src="assets/images/lib2.jpg" alt="budynek Miejskiej Biblioteki Publicznej w Mysłowicach">
+                </div>
+
+                <div class="description-text">
+                    <div class="description-wrapper">
+                        <h2>Miejska Biblioteka Publiczna w Mysłowicach</h2>
+                        <p>Nasza placówka została otwarta 9 maja 1948 roku. W rok później powstał pierwszy punkt biblioteczny w Brzęczkowicach, a następnie w Brzezince i Kosztowach oraz kolejny w Janowie Miejskim. Punkty te przekształciły się w filie biblioteczne.
+                            Większość księgozbioru stanowiły książki wydane przed wybuchem II wojny światowej. Stały i systematyczny wzrost czytelnictwa w Mysłowiacach datuje się od 1951 roku. Wówczas to powstały kolejne filie biblioteczne - w Morgach,
+                            na osiedlu Bończyka i w Laryszu.</p>
+                        <button class="special-button">Poznaj naszą historię <img src="assets/icons/right arrow clear.svg" alt=""></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="description-quote">
+                <div class="quote-background"><img src="assets/images/quote.svg" alt=""></div>
+                <div class="quote-container">
+                    <i class="quote">Bardzo wiele książek należy przeczytać po to, aby sobie uświadomić, jak mało się wie.</i>
+                    <p class="name">~ Nikołaj Gogol</p>
+                </div>
+            </div>
+        </section>
+        <!-- corousels -->
+        <section id="carousels-section">
+            <div id="books-container" class="books-container">
+                <div class="books-header">
+                    <h2>Nowości w naszej bibliotece</h2>
+                    <div class="container">
+                        <p>Zapraszamy do biblioteki po pierwszą turę nowości książkowych zakupionych ze środków Narodowego Programu Rozwoju Czytelnictwa.</p>
+                        <button class="special-button">Przejdź do księgozbioru <img src="assets/icons/right arrow clear.svg" alt=""></button>
+                    </div>
+
+                </div>
+                <div class="books-carousel">
+                    <div class="carousel-image accessible "><img src="assets/images/popiełuszko@2x.jpg" alt=""></div>
+                    <div class="carousel-image unavailable"><img src="assets/images/w taniej służbie@2x.jpg" alt=""></div>
+                    <div class="carousel-image accessible "><img src="assets/images/era dinozaurów@2x.jpg" alt=""></div>
+                    <div class="carousel-image accessible "><img src="assets/images/profil mordercy@2x.jpg" alt=""></div>
+                    <div class="carousel-image accessible "><img src="assets/images/wazowie@2x.jpg" alt=""></div>
+                </div>
+                <div class="books-btns">
+                    <button class="prev-btn scroll-btn"> <img src="assets/icons/left arrow.svg" alt=""> Poprzednie</button>
+                    <button class="next-btn scroll-btn">Następne <img src="assets/icons/right arrow.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div id="news-container" class="news-container">
+                <h2>Aktualności</h2>
+                <div class="news-carousel">
+                    <div class="news-image"><img src="assets/images/zakup nowości.jpg" alt=""></div>
+                    <div class="news-image"><img src="assets/images/humor w bałwankowie.jpg" alt=""></div>
+                    <div class="news-image"><img src="assets/images/przedstawienie.jpg" alt=""></div>
+                    <div class="news-image"><img src="assets/images/pojedynek książek.jpg" alt=""></div>
+                </div>
+                <div class="btn-group">
+                    <button class="all-news special-button">Wszystkie aktualności <img src="assets/icons/right arrow clear.svg" alt=""></button>
+                    <div class="news-buttons">
+                        <button class="prev-news-button"><img src="assets/icons/left arrow.svg" alt=""></button>
+                        <button class="next-news-button"><img src="assets/icons/right arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="section-contact">
+            <div class="contact-info">
+                <div class="info-container">
+                    <h2>Skontaktuj się z nami</h2>
+                    <p>Masz pytania? Chętnie z Tobą porozmawiamy! Wybierz z poniższej listy interesującą Cię filię i zadzwoń do nas.</p>
+                    <form>
+                        <label class="label" for="libs">Filie Miejskiej Biblioteki Publicznej w Mysłowicach:</label>
+                        <br>
+                        <select name="libs" id="libs" onchange="selectedValue()">
+                            <option value="1">Filia biblioteczna nr 1 (ul. Laryska 5)</option>
+                            <option value="2">Filia biblioteczna nr 2 (ul. Wielka Skotnica 84a)</option>
+                            <option value="3">Filia biblioteczna nr 3 (ul. Laryska 102)</option>
+                        </select>
+                    </form>
+                    <div class="lib-info">
+                        <h4 class="lib-adress"></h4>
+                        <p class="lib-hours"></p>
+                        <p class="lib-tel"></p>
+                        <p class="lib-manager"></p>
+                    </div>
+                    <button class="contact-button special-button">Więcej informacji <img src="assets/icons/right arrow clear.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="contact-image">
+                <img src="assets/images/contact photo@2x.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="up-footer">
+            <ul class="logos">
+                <li class="logo">
+                    <a href="https://www.pitax.pl/?gclid=Cj0KCQjwyPbzBRDsARIsAFh15JYQes6l_7kzwXGX5UzJEj6kwQZlqRE3O3kL2vmTrOsHSRte43DejVEaApLOEALw_wcB"><img src="assets/logos/pitax_logo_4.jpg"></a>
+                </li>
+                <li class="logo">
+                    <a href="https://seniorzy.slaskie.pl/"><img src="assets/logos/seniora.jpg"></a>
+                </li>
+                <li class="logo">
+                    <a href="https://www.ibuk.pl/?gclid=Cj0KCQjwyPbzBRDsARIsAFh15JYtrprG2ulJYVqs6Cqq_49XtAuF_or9mmwOCdSPV1PUpPjwWi_z7bsaAtenEALw_wcB"><img src="assets/logos/buk.jpg"></a>
+                </li>
+                <li class="logo">
+                    <a href="https://ekopaka.pl/?gclid=Cj0KCQjwyPbzBRDsARIsAFh15JY3ajHyskgdUmErkjkmZrsqYYi8_T8PlGIovSikJt671RzEi7zBgNYaAjlJEALw_wcB"><img src="assets/logos/ekopaka.jpg"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-footer">
+            <div class="main-foot-container">
+                <div class="foot-navigate">
+                    <h3 class="foot-logo"><img src="/MBP/assets/logos/main-logo.png" alt=""></h3>
+                    <div class="nav-btns-container">
+                        <ul class="foot-nav-btns">
+                            <li>
+                                <a href="#">Strona główna</a>
+                            </li>
+                            <li>
+                                <a href="#section-events">Kalendarium</a>
+                            </li>
+                            <li>
+                                <a href="#">O nas</a>
+                            </li>
+                            <li>
+                                <a href="#section-description">Historia MBP</a>
+                            </li>
+                            <li>
+                                <a href="">Mapa witryny</a>
+                            </li>
+                        </ul>
+                        <ul class="foot-nav-btns">
+                            <li>
+                                <a href="#books-container">Księgozbiór</a>
+                            </li>
+                            <li>
+                                <a href="#news-container">Aktualności</a>
+                            </li>
+                            <li>
+                                <a href="#">Dyrekcja</a>
+                            </li>
+                            <li>
+                                <a href="#">Polityka prywatności</a>
+                            </li>
+                            <li>
+                                <a href="#section-contact">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="foot-info">
+                    <div class="info-container">
+                        <h4>Biblioteka centralna</h4>
+                        <p>Mysłowice, ul. O. Strumieńskiego 4</p>
+                        <br>
+                        <p>tel. 32 316 09 81</p>
+                        <br>
+                        <p>Czynna codziennie w godz. 9.00 - 17.00 <br> w soboty nieczynna</p>
+                    </div>
+                    <ul class="foot-logos">
+                        <li>
+                            <a href="https://www.gov.pl/web/kultura/narodowy-program-rozwoju-czytelnictwa"><img src="assets/logos/nprcz.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.pl/web/kultura/"><img src="assets/logos/lgm.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://www.bn.org.pl/"><img src="assets/logos/bn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/pages/category/Library/Miejska-Biblioteka-Publiczna-w-Mys%C5%82owicach-378109108882093/"><img src="assets/logos/fb_pl.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="cookies">Zgodnie z art. 173 Prawa Telekomunikacyjnego informujemy, że odwiedzana strona w celu realizacji usług korzysta z plików cookie. Pozostając na tej stronie, wyrażasz zgodę na korzystanie z tego typu plików.</p>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="copyrights-container">
+                <p>Copyright © 2019 by Miejska Bilioteka Publiczna w Mysłowicach</p>
+                <p>Wszelkie prawa zastrzeżone</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="slick.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+#carousels-section {
+    height: 150rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.news-container,
+.books-container {
+    display: flex;
+    flex-direction: column;
+}
+
+// books-carousel
+.books-container {
+    height: 60%;
+}
+
+.books-header {
+    @include flex(center, flex-start, column);
+    width: 80%;
+    height: 25%;
+    margin: auto;
+    h2 {
+        color: $dark-blue;
+        margin-bottom: 2rem;
+    }
+    .container {
+        width: 100%;
+        @include flex(space-between, center, row);
+        p {
+            color: $light-blue;
+        }
+        button {
+            @include hover-btn(30rem);
+        }
+    }
+}
+
+.books-carousel {
+    display: flex !important;
+    align-items: center !important;
+    height: 55rem;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 80%;
+        background-color: $light-blue;
+        opacity: 0.1;
+        height: 40%;
+        z-index: -2;
+        top: 2%;
+    }
+    &:after {
+        position: absolute;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        width: 20rem;
+        height: 4rem;
+        z-index: -1;
+        border: 1px solid $light-blue;
+        border-radius: 5px;
+        font-size: $text;
+        color: $dark-blue;
+        background-color: white;
+        text-align: center;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: opacity .5s;
+    }
+}
+
+.available-after {
+    &:after {
+        content: "Książka jest dostępna";
+        opacity: 1;
+        transition: opacity .5s;
+    }
+}
+
+.unavailable-after {
+    &:after {
+        content: "Książka jest wypożyczona";
+        opacity: 1;
+        transition: ease-in;
+        transition: opacity .5s;
+    }
+}
+
+.slick-slide {
+    width: 40rem !important;
+}
+
+.slick-track {
+    height: 45rem !important;
+}
+
+.carousel-image {
+    position: relative;
+    width: 75% !important;
+    margin: 0 20rem;
+    transform: translateY(5%);
+    &:before {
+        position: absolute;
+        content: "";
+        height: 2rem;
+        border-radius: 5rem;
+        width: 2rem;
+        top: 0;
+        right: 0;
+    }
+    img {
+        width: 30rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.accessible {
+    &:before {
+        background-color: #7DCC7A;
+    }
+}
+
+.unavailable {
+    &:before {
+        background-color: #FFC268;
+    }
+}
+
+.books-btns {
+    @include flex(space-between, center, row);
+    width: 80%;
+    margin: auto;
+    .scroll-btn {
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        color: $dark-blue;
+        font-size: $text;
+        font-weight: 700;
+        img {
+            margin: 1rem;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+// news-carousel
+.news-container {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    .news-image {
+        img {
+            width: 35rem;
+        }
+    }
+    h2 {
+        text-align: center;
+        color: $dark-blue;
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+    .slick-slide {
+        margin: 0 5rem;
+        transform: translateX(50%);
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        width: 15%;
+        height: 100%;
+        z-index: -2;
+        background-color: $light-blue;
+        opacity: 0.1;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.news-carousel {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 55rem;
+    .news-image {
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-group {
+    @include flex(space-between, center, row);
+    width: 80%;
+    margin: 2rem auto;
+    .all-news {
+        @include hover-btn(28rem);
+    }
+}
+
+.prev-news-button,
+.next-news-button {
+    background: transparent;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+}

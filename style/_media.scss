@@ -1,0 +1,375 @@
+                   @media screen and (max-width:1300px) {
+                       html {
+                           font-size: 55%;
+                           .events-soon {
+                               padding-left: 13rem !important;
+                           }
+                       }
+                   }
+                   
+                   @media screen and ( max-width: 1080px) {
+                       html {
+                           font-size: 51%;
+                       }
+                       .events-soon {
+                           padding-left: 10rem !important;
+                       }
+                       #arrow-button {
+                           width: 3.5rem;
+                       }
+                       .down-icons {
+                           img {
+                               width: 2rem;
+                           }
+                       }
+                       .down-nav-a {
+                           padding-bottom: 2.5rem !important;
+                       }
+                   }
+                   
+                   @media screen and ( max-width: 980px) {
+                       html {
+                           font-size: 48%;
+                       }
+                       .up-nav,
+                       hr,
+                       .down-icons,
+                       .down-btns,
+                       .a-bottom-border {
+                           display: none;
+                       }
+                       .intro {
+                           height: 70vh !important;
+                       }
+                       .form-wrapper {
+                           height: 40%;
+                           .advanced-btn {
+                               height: 5rem !important;
+                           }
+                           button {
+                               img {
+                                   display: none;
+                               }
+                           }
+                       }
+                       .responsive-head {
+                           display: flex;
+                           position: absolute;
+                           min-height: 60rem;
+                           min-width: 45%;
+                           background-color: $dark-blue;
+                           top: 10;
+                           right: 0;
+                           z-index: 5;
+                       }
+                       #logo {
+                           img {
+                               width: 25rem
+                           }
+                       }
+                       .burger {
+                           display: flex;
+                       }
+                       .intro {
+                           height: 90vh;
+                       }
+                       // events-section
+                       #section-events {
+                           @include flex(center, center, column !important);
+                           min-height: 80vh;
+                           .events-soon {
+                               justify-content: space-around;
+                               align-items: center;
+                               height: 100%;
+                               width: 90%;
+                               margin: auto;
+                               padding-left: 0 !important;
+                               .events-button {
+                                   img {
+                                       display: none;
+                                   }
+                               }
+                               h2 {
+                                   padding: 0;
+                               }
+                               .dots {
+                                   display: none;
+                               }
+                               .responsive-cards {
+                                   @include flex(center, center, column);
+                                   width: 80%;
+                                   height: 45rem;
+                                   flex-wrap: nowrap;
+                                   .responsive-card {
+                                       position: relative;
+                                       height: 30rem;
+                                       width: 90%;
+                                       padding: 3rem;
+                                       p {
+                                           margin-top: 1rem;
+                                           margin-bottom: 2rem;
+                                       }
+                                       ul {
+                                           @include flex(space-around, center, row);
+                                           width: 90%;
+                                           li {
+                                               display: flex;
+                                               justify-content: space-around;
+                                               align-items: space-around;
+                                               img {
+                                                   margin-right: 1rem;
+                                               }
+                                           }
+                                       }
+                                       &:after {
+                                           content: "";
+                                           position: absolute;
+                                           width: 25%;
+                                           height: 50%;
+                                           border: 2px solid $light-blue;
+                                           border-bottom-right-radius: 2rem;
+                                           bottom: 0;
+                                           right: 0;
+                                           border-top-color: transparent;
+                                           border-left-color: transparent;
+                                       }
+                                       &:before {
+                                           content: "";
+                                           position: absolute;
+                                           width: 25%;
+                                           height: 50%;
+                                           border: 2px solid $light-blue;
+                                           border-top-left-radius: 2rem;
+                                           top: 0;
+                                           left: 0;
+                                           border-bottom-color: transparent;
+                                           border-right-color: transparent;
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                       .events-calendary {
+                           display: none;
+                       }
+                       .special-button {
+                           width: 26rem !important;
+                           height: 3rem;
+                           border: 2px solid $dark-blue !important;
+                           border-radius: 2rem;
+                           color: white !important;
+                           background-color: $dark-blue !important;
+                           &::before {
+                               display: none !important;
+                           }
+                           img {
+                               display: none;
+                           }
+                       }
+                       .books-header {
+                           height: 40% !important;
+                           h2 {
+                               align-self: center;
+                           }
+                           .container {
+                               flex-direction: column !important;
+                               p {
+                                   margin-top: 2rem;
+                                   margin-bottom: 3rem;
+                               }
+                           }
+                       }
+                       #section-contact,
+                       .books-carousel,
+                       .news-container {
+                           &::before {
+                               width: 100% !important;
+                           }
+                       }
+                       .slick-arrow {
+                           img {
+                               height: 4rem;
+                           }
+                       }
+                       .news-container {
+                           height: 50% !important;
+                           margin-top: 3rem;
+                           .btn-group {
+                               flex-direction: column-reverse;
+                               width: 80%;
+                               height: 20rem;
+                               .news-buttons {
+                                   display: flex;
+                                   justify-content: space-between;
+                                   width: 100%;
+                               }
+                           }
+                       }
+                       #section-contact {
+                           height: 80rem;
+                           margin-top: 22rem !important;
+                           &::before {
+                               top: -1.1% !important;
+                           }
+                           .contact-button {
+                               align-self: center;
+                           }
+                           .contact-info {
+                               width: 80%;
+                           }
+                           .info-container {
+                               width: 100%;
+                               margin: 0;
+                           }
+                           .contact-image {
+                               display: none;
+                           }
+                       }
+                       // footer
+                       .up-footer {
+                           margin: 0 auto 2rem auto !important;
+                           width: 90% !important;
+                       }
+                       .main-foot-container {
+                           width: 90% !important;
+                       }
+                       .main-footer {
+                           height: 65rem !important;
+                           .foot-navigate {
+                               .foot-logo {
+                                   display: none;
+                               }
+                               .nav-btns-container {
+                                   width: 100%;
+                               }
+                           }
+                           .foot-info {
+                               flex-direction: column-reverse;
+                               margin: 0;
+                               .foot-logos {
+                                   width: 100%;
+                                   margin: 3rem 0 3rem 0;
+                               }
+                               .info-container {
+                                   width: 100%;
+                               }
+                           }
+                       }
+                       .copyrights-container {
+                           width: 90% !important;
+                           p {
+                               font-size: 1.2rem !important;
+                           }
+                       }
+                   }
+                   
+                   @media screen and ( max-width: 700px) {
+                       html {
+                           font-size: 47%;
+                       }
+                       .intro {
+                           background: white;
+                       }
+                       .form-wrapper {
+                           @include flex (center, center, column);
+                           width: 90%;
+                           height: 60%;
+                           border: 3px solid $dark-blue;
+                           padding: 3rem;
+                           border-radius: 3rem;
+                           h1 {
+                               color: $dark-blue;
+                           }
+                           form {
+                               width: 100%;
+                               input {
+                                   width: 100%;
+                               }
+                               button {
+                                   width: 100%;
+                                   margin: 0;
+                                   img {
+                                       display: none;
+                                   }
+                               }
+                           }
+                       }
+                       //    description section
+                       .description-text {
+                           height: 80% !important;
+                           .description-wrapper {
+                               width: 90%;
+                               margin: auto;
+                               align-items: center;
+                           }
+                       }
+                       .description-image {
+                           display: none;
+                       }
+                       .description-quote {
+                           .quote-background {
+                               width: 100% !important;
+                           }
+                           .quote-container {
+                               width: 80% !important;
+                           }
+                       }
+                       .news-container {
+                           height: 60%;
+                       }
+                       #footer {
+                           img {
+                               height: 4rem;
+                           }
+                       }
+                   }
+                   
+                   @media screen and ( max-width: 525px) {
+                       html {
+                           font-size: 35%;
+                       }
+                       .form-wrapper {
+                           h1 {
+                               font-size: 5.8rem;
+                           }
+                       }
+                   }
+                   
+                   @media screen and ( max-width: 390px) {
+                       html {
+                           font-size: 35%;
+                       }
+                       .form-wrapper {
+                           padding: 1rem;
+                           .special-button {
+                               width: 30rem !important;
+                           }
+                           h1 {
+                               font-size: 4.3rem;
+                           }
+                       }
+                       .responsive-head {
+                           max-width: 40%;
+                       }
+                       .responsive-cards {
+                           width: 100% !important;
+                           .responsive-card {
+                               width: 90% !important;
+                               li {
+                                   img {
+                                       width: 2rem;
+                                   }
+                               }
+                           }
+                       }
+                       .books-header {
+                           width: 90% !important;
+                           .container {
+                               width: 90% !important;
+                               margin: 0 auto auto auto !important;
+                           }
+                       }
+                       .quote-container {
+                           margin: 0;
+                       }
+                   }

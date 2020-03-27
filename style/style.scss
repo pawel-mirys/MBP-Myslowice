@@ -1,0 +1,83 @@
+$header1: 5.8rem;
+$header2: 4rem;
+$header3: 2.4rem;
+$header4: 2.1rem;
+$main-text: 1.8rem;
+$text: 1.6rem;
+$up-nav: 1.4rem;
+$down-nav: 1.6rem;
+$light-blue: #3A65AF;
+$mid-blue: #254070;
+$dark-blue: #213963;
+$bg-color: rgba(42, 55, 77, 0.35);
+$text-white: white;
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin hover-btn($width) {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: $text;
+    font-weight: 700;
+    height: 5rem;
+    width: $width;
+    color: $dark-blue;
+    &:before {
+        content: "";
+        transition: 0.2s ease-in-out all;
+        position: absolute;
+        height: 100%;
+        width: 30%;
+        background-color: $light-blue;
+        opacity: 0.2;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    &:hover {
+        cursor: pointer;
+        &:before {
+            width: 100%;
+        }
+    }
+    img {
+        position: absolute;
+        right: 0;
+        margin-left: 3rem;
+        transform: translateY(20%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@import "global";
+@import "navbar";
+@import "intro-section";
+@import "media";
+@import "responsive-navbar";
+@import "events-section";
+@import "presentation-section";
+@import "carousels-section";
+@import "contact-section";
+@import "footer";
+// Classes for JS
+.a-hover-over {
+    display: block;
+}
+
+.nav-click-out,
+.a-hover-out {
+    display: none;
+}

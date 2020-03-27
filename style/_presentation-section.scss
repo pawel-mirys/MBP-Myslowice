@@ -1,0 +1,65 @@
+#section-description {
+    height: 90rem;
+    width: 100%;
+}
+
+.description-container {
+    height: 70%;
+    @include flex(center, center, row);
+}
+
+.description-image {
+    flex: 1 1 40rem;
+    height: 100%;
+    width: 30%;
+    #building {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.description-text {
+    flex: 2 1 40rem;
+    height: 100%;
+    width: 60%;
+    color: $dark-blue;
+}
+
+.description-wrapper {
+    @include flex(space-around, flex-start, column);
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    button {
+        @include hover-btn(25rem)
+    }
+}
+
+.description-quote {
+    @include flex(center, center, column);
+    height: 30%;
+    width: 100%;
+    position: relative;
+    .quote-background {
+        position: absolute;
+        background-color: $light-blue;
+        z-index: -2;
+        height: 100%;
+        width: 57%;
+        right: 0;
+        opacity: 0.1;
+        text-align: center;
+    }
+    .quote-container {
+        width: 50%;
+        margin: auto;
+        color: $light-blue;
+    }
+    .name {
+        margin-top: 2rem;
+    }
+    .quote {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,90 @@
+#section-events {
+    height: 70rem;
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+}
+
+.events-soon {
+    color: $dark-blue;
+    flex: 1 1 40rem;
+    @include flex(space-around, flex-start, column);
+    position: relative;
+    width: 45%;
+    height: 70rem;
+    padding-left: 14rem;
+    h2 {
+        padding-bottom: 15rem;
+        font-size: $header2;
+    }
+    .dots {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        z-index: -3;
+    }
+    .responsive-cards {
+        display: none;
+    }
+}
+
+.events-calendary {
+    position: relative;
+    flex: 2 1 40rem;
+    width: 55%;
+    height: 100%;
+    .grey-break {
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        z-index: -3;
+        background-color: $light-blue;
+        opacity: 0.1;
+    }
+}
+
+// 
+// 
+// 
+// 
+.events-button {
+    @include hover-btn(23rem)
+}
+
+.cards {
+    @include flex(center, flex-start, column);
+    height: 70rem;
+    width: 100%;
+    ul {
+        @include flex(flex-start, center, row);
+        li {
+            margin-right: 4rem;
+            img {
+                margin-right: 1rem;
+                line-height: 10px;
+            }
+            &:nth-child(3) {
+                margin-left: 13rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.card {
+    max-width: 70rem;
+    padding: 3rem;
+    margin-top: 6rem;
+    color: $light-blue;
+    &:hover {
+        box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.1), 5px 7px 8px rgba(0, 0, 0, 0.1);
+    }
+    h3 {
+        color: $dark-blue;
+    }
+    p {
+        padding: 1rem 0 1rem 0;
+        max-width: 80%;
+    }
+}
